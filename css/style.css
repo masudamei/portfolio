@@ -1,0 +1,623 @@
+@charset "utf-8";
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background: #fdf4e3;
+}
+.loading_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+}
+.loading_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+.loading_text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading_img img:first-child {
+  animation: crossfade 1.5s ease 0.75s infinite;
+}
+.loading_img img:nth-child(2) {
+  animation: crossfade 1.5s ease 0s infinite;
+}
+
+@keyframes crossfade {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fv {
+  position: relative;
+}
+.fv_img02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.color-in.color-show .fv_img02 {
+  opacity: 1;
+}
+
+.scroll_img {
+  text-align: center;
+}
+.scroll_img img {
+  width: 10%;
+}
+/* lead */
+
+.lead p {
+  text-align: center;
+  font-family: "Century", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+
+.lead p:first-child {
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.lead p:nth-child(2) {
+  margin-bottom: 30px;
+  font-size: 82px;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+}
+
+.lead p:last-child {
+  font-size: 23px;
+  line-height: 1.65;
+  letter-spacing: 0.1em;
+}
+
+.sp_br {
+  display: none;
+}
+
+/* about */
+
+.about_img {
+  width: 40%;
+}
+
+.about_img img {
+  border-bottom-right-radius: 82px;
+}
+
+.about {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.about h3 {
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+}
+.about_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about_text h2 {
+  width: 272px;
+  margin: 63px 0 45px;
+}
+
+.about_catch {
+  font-size: 44px;
+  margin-bottom: 27px;
+  line-height: 1.38;
+}
+
+.about_text {
+  width: 65%;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+}
+
+.about_desc {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 30px;
+}
+.sp-only {
+  display: none;
+}
+
+.about_img_sp {
+  display: none;
+}
+
+.about_btn {
+  border: 1px solid #553b2a;
+  width: 228px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  align-items: flex-end;
+  margin: 30px 0 0 auto;
+  border-radius: 3px;
+}
+
+.about h3 {
+  margin: 0 0 30px 50px;
+  font-size: 24px;
+}
+.pc-only {
+  display: block;
+}
+/* menu */
+.menu {
+  max-width: 1000px;
+
+  margin: -30px auto 0;
+  padding: 0 25px;
+}
+
+.menu h2 {
+  text-align: center;
+}
+
+.menu_block {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.menu_item {
+  width: 30%;
+}
+
+.menu_item h3 {
+  color: #553b2a;
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+  margin: 20px 0;
+}
+.menu_item p {
+  margin-top: 30px;
+  line-height: 1.47;
+  font-size: 16px;
+  border-bottom: 1px solid #553b2a;
+  height: 150px;
+}
+
+.menu_item p:last-child {
+  border-bottom: none;
+}
+
+.menu_btn {
+  border: 1px solid #553b2a;
+  width: 250px;
+  height: 68px;
+  text-align: center;
+  line-height: 68px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+/* works */
+
+.works {
+  margin: -20px 25px 0;
+}
+.works h2 {
+  width: 245px;
+  margin: 0 auto 65px;
+}
+
+.works_images {
+  display: flex;
+}
+
+.works_btn {
+  border: 1px solid #553b2a;
+  width: 250px;
+  height: 68px;
+  text-align: center;
+  line-height: 68px;
+  margin: 65px auto 0;
+  border-radius: 3px;
+}
+.works_sp {
+  display: none;
+}
+
+/* background */
+.water01 img {
+  background-image: url(../images/water04.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+}
+.glass_right {
+  text-align: right;
+  margin-right: -100px;
+}
+
+.water02 img {
+  background-image: url(../images/water01.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+}
+.glass_left {
+  text-align: left;
+  margin-left: -100px;
+}
+.water03 img {
+  background-image: url(../images/water06.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+}
+.water04 img {
+  background-image: url(../images/water03.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+}
+.water05 img {
+  background-image: url(../images/water02.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+}
+
+@media screen and (max-width: 1100px) {
+  .scroll_img img {
+    width: 13%;
+  }
+  /* lead */
+  .lead p:nth-child(2) {
+    margin-bottom: 30px;
+    font-size: 67px;
+  }
+
+  .lead p:last-child {
+    font-size: 19px;
+  }
+
+  /* about */
+  .about_catch {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .scroll_img img {
+    width: 20%;
+  }
+
+  /* background */
+  .water01 img {
+    background-image: url(../images/water04.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 85px;
+  }
+  .glass_right {
+    text-align: right;
+    margin-right: -10px;
+  }
+
+  .water02 img {
+    background-image: url(../images/water01.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 85px;
+  }
+  .glass_left {
+    text-align: left;
+    margin-left: -10px;
+  }
+  .water03 img {
+    background-image: url(../images/water06.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 85px;
+  }
+  .water04 img {
+    background-image: url(../images/water03.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 85px;
+  }
+  .water05 img {
+    background-image: url(../images/water02.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    height: 85px;
+  }
+
+  /* lead */
+  .lead {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .lead p:first-child {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+
+  .lead p:nth-child(2) {
+    margin-bottom: 15px;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .lead p:last-child {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+  }
+
+  /* about */
+
+  .about {
+    display: block;
+    margin: 0 30px;
+    padding: 0;
+  }
+  .about h3 {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .about_img {
+    display: none;
+  }
+
+  .about_img_sp {
+    display: block;
+  }
+
+  .about_img_sp {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .about_text {
+    width: 100%;
+  }
+
+  .about_text h2 {
+    width: 160px;
+    margin: 0 auto 15px;
+  }
+
+  .about_catch {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.25;
+    padding: 25px 20px 0;
+  }
+
+  .about_desc {
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: justify;
+  }
+  .pc-only {
+    display: none;
+  }
+  .about_btn {
+    border: 1px solid #553b2a;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    align-items: flex-end;
+    margin: 30px 0 20px auto;
+    border-radius: 3px;
+  }
+  /* menu */
+  .menu {
+    padding: 20px 30px 0;
+    margin: 0 auto;
+  }
+
+  .menu h2 {
+    width: 87px;
+    margin: 0 auto;
+  }
+
+  .menu_img {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .menu_block {
+    display: block;
+  }
+
+  .menu_item h3 {
+    color: #553b2a;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  .menu_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .menu_item p {
+    line-height: 1.58;
+    font-size: 16px;
+    margin-top: 0;
+    height: auto;
+    padding: 10px;
+  }
+  .menu_item p:last-child {
+    height: 80px;
+  }
+  .menu_btn {
+    border: 1px solid #553b2a;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto 30px;
+    border-radius: 3px;
+  }
+
+  /* works */
+  .works {
+    margin: 0 30px 0 50px;
+  }
+  .works_pc {
+    display: none;
+  }
+  .works_sp {
+    display: block;
+  }
+  .works h2 {
+    margin: 30px auto 30px;
+  }
+  .works_btn {
+    border: 1px solid #553b2a;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 30px auto 30px;
+    border-radius: 3px;
+  }
+
+  /* .pagetop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+  }
+
+  .pagetop img {
+    width: 100%;
+  } */
+
+  /* contact */
+
+  .gallery_images .slick-next {
+    right: 25px !important;
+  }
+  .gallery_images .slick-prev {
+    left: 25px !important;
+  }
+
+  .works_images_sp .slick-next::before {
+    content: "";
+
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-top: 2px solid #553b2a;
+    border-right: 2px solid #553b2a;
+    transform: rotate(45deg);
+  }
+  .works_images_sp .slick-prev::before {
+    content: "";
+
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-top: 2px solid #553b2a;
+    border-right: 2px solid #553b2a;
+    transform: rotate(225deg);
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+}
+
+.header_slider .slick-dots {
+  bottom: 20px;
+}
+.header_slider .slick-dots li button:before,
+.header_slider .slick-dots li.slick-active button:before {
+  color: #fff;
+  font-size: 14px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+s .header_slider .slick-slide img {
+  width: 100%;
+}
+.works_images_sp .slick-prev {
+  left: 1px;
+  z-index: 1;
+}
+.works_images_sp .slick-next::before {
+  content: "";
+
+  width: 13px;
+  height: 13px;
+  display: block;
+  border-top: 3px solid #553b2a;
+  border-right: 3px solid #553b2a;
+  transform: rotate(45deg);
+}
+.works_images_sp .slick-prev::before {
+  content: "";
+
+  width: 13px;
+  height: 13px;
+  display: block;
+  border-top: 3px solid #553b2a;
+  border-right: 3px solid #553b2a;
+  transform: rotate(225deg);
+}
+
+.works_images_sp .slick-next {
+  right: 1px;
+}
+
+.lb-data .lb-number {
+  display: none !important;
+}

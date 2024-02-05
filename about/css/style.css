@@ -1,0 +1,139 @@
+@charset "utf-8";
+h1 {
+  text-align: center;
+}
+.lead {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  margin: 40px auto 150px;
+  width: 850px;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.about_top_img {
+  width: 15%;
+  margin: 0 auto 20px;
+}
+.about_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about h2 {
+  font-size: 20px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  text-align: left;
+  border-bottom: 1px solid #553b2a;
+  margin-bottom: 40px;
+}
+.about_img {
+  width: 30%;
+}
+.about_design {
+  width: 840px;
+  margin: 0 auto;
+}
+.about_design h2 {
+  display: inline-block;
+  padding: 0 20px 5px;
+}
+.about_text h2 {
+  width: 272px;
+  margin: 63px 0 45px;
+}
+
+.about_catch {
+  font-size: 44px;
+  margin-bottom: 27px;
+  line-height: 1.38;
+}
+
+.about_text {
+  width: 60%;
+  padding-top: 20px;
+}
+
+.about_desc {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.about_name {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.about_img_sp {
+  display: none;
+}
+
+.about_btn {
+  border: 2px solid #553b2a;
+  width: 228px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  align-items: flex-end;
+  margin: 0 0 0 auto;
+}
+main {
+  margin-bottom: 200px;
+}
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 6.4vw;
+  }
+  .lead,
+  .about_design {
+    width: 90%;
+    font-size: 2.9vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+    margin: 30px auto 40px;
+  }
+  .about h2 {
+    font-size: 3.8vw;
+  }
+  main {
+    margin-bottom: 0;
+  }
+
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+  .about_wrapper {
+    display: block;
+  }
+  .about_desc {
+    font-size: 2.9vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+  }
+  .about_text {
+    width: 100%;
+  }
+  .about_design h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+    line-height: inherit;
+    padding: 0 10px 5px;
+  }
+  .about_img {
+    width: 30%;
+  }
+}

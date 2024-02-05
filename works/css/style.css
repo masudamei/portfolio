@@ -1,0 +1,180 @@
+@charset "utf-8";
+h2 {
+  margin-bottom: 40px;
+}
+.work_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+}
+
+.work_images {
+  width: 49%;
+  margin-bottom: 40px;
+}
+
+.works_sp {
+  display: none;
+}
+
+.work_bana {
+  display: flex;
+}
+
+.work_img {
+  width: 72vw;
+}
+.work_pc {
+  width: 72vw;
+}
+
+.work_wrap02 {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.work_top {
+  text-align: center;
+}
+.work_top_img {
+  width: 15%;
+  margin: 0 auto 20px;
+}
+.work_desc {
+  display: flex;
+  margin-left: 10px;
+}
+.work_desc p:first-child {
+  font-size: 16px;
+  padding: 12px 25px 12px 10px;
+  border-right: 2px solid #553b2a;
+}
+.work_desc p:last-child {
+  font-size: 14px;
+  padding: 12px 30px 12px 15px;
+}
+.banner {
+  margin-top: 12px;
+}
+.banner02 {
+  margin-bottom: 30px;
+}
+
+.work_desc02 {
+  margin: 50px 0;
+}
+.work_desc03 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.work_about {
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+.contact {
+  margin-top: 100px;
+}
+.detail_h2 {
+  margin-top: 50px;
+}
+.sp {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+}
+@media screen and (max-width: 767px) {
+  .works_pc {
+    display: none;
+  }
+  .works_sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  h2 {
+    font-size: 6.4vw;
+  }
+
+  .work_wrap {
+    display: block;
+  }
+  .work_images {
+    width: 100%;
+  }
+  .work_desc p:first-child {
+    border-right: 1px solid #553b2a;
+  }
+  .contact {
+    margin-top: 0;
+  }
+  .work_wrap02 {
+    width: 90%;
+  }
+  .work_desc {
+    font-size: 2.9vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+  }
+
+  .work_desc02,
+  .work_about p {
+    margin: 5px auto;
+    font-size: 2.9vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+  }
+  .work_about {
+    margin: 25px auto 0;
+  }
+  .work_desc03 {
+    font-size: 3.5vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+    margin-bottom: 0;
+  }
+  .work_img {
+    width: auto;
+    margin-top: 20px;
+  }
+
+  .lead,
+  .about_design {
+    width: 90%;
+    font-size: 2.9vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+    margin: 30px auto 40px;
+  }
+  .about h2 {
+    font-size: 4vw;
+  }
+  main {
+    margin-bottom: 0;
+  }
+
+  .about_wrapper {
+    display: block;
+  }
+  .about_desc {
+    font-size: 2.9vw;
+    letter-spacing: 0.1em;
+    line-height: 2.5em;
+  }
+  .about_text {
+    width: 100%;
+  }
+  .about_design h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+    line-height: inherit;
+  }
+  .about_img {
+    width: 30%;
+  }
+}

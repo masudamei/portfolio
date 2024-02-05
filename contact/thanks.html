@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masudameiのportfolio</title>
+    <meta name="description" content="masudameiのportfolioです">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrap">
+            <a href="../index.html">
+                <h1 class="header_logo"><img src="../images/logo_header.png" alt="XYZ DESIGN"></h1>
+            </a>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+
+    <main>
+        <div class="contact_top_img"><img src="imeges/thanks_top.png" alt="thanks"></div>
+        <h2>Thanks</h2>
+        <div class="thanks_desc">
+            <p>お問い合わせありがとうございます</p>
+            <p>お問い合わせのご返信は2営業日以内を心がけております。（休業日：土日祝日）<br><br>お客様のご利用環境、また迷惑メール対策等の設定により、お返事が届かない場合があります。<br><br>「masudamei0925@gmail.com」からのメール受信が可能な設定にしていただきますようお願い致します。
+
+                5営業日経過しても返信のない場合、大変お手数をおかけしますが再度お送りいただくよう、お願い申しあげます。</p>
+            <a href="../index.html">
+                <div class="thanks_btn">TOPに戻る</div>
+            </a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer_block">
+            <div class="footer_img"><a href="./index.html">
+                    <img src="../images/footer_logo.png" alt="XYZ design"></a>
+            </div>
+            <nav class="pc_nav footer_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="sp_btn"><span></span></div> -->
+            <nav class="footer_sp_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $(".sp_nav").fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+
+            $('.works_images_sp').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+        });
+    </script>
+
+</body>
+
+</html>

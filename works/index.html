@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masudameiのportfolio</title>
+    <meta name="description" content="masudameiのportfolioです">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrap">
+            <a href="../index.html">
+                <h1 class="header_logo"><img src="../images/logo_header.png" alt="XYZ DESIGN"></h1>
+            </a>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="work_top_img"><img src="imeges/works_top.png" alt="works"></div>
+
+
+        <h2>Works</h2>
+        <div class="work_wrap">
+            <div class="work_images">
+                <div><a href="./works1.html"><img src="imeges/work1.png" alt="work1"></a></div>
+                <div class="work_desc">
+                    <p>Webサイト</p>
+                    <p>デザイン</p>
+                </div>
+            </div>
+            <div class="work_images">
+                <div><a href="./works2.html"><img src="imeges/work2.png" alt="work2"></a></div>
+                <div class="work_desc">
+                    <p>Webサイト</p>
+                    <p>デザイン</p>
+                </div>
+            </div>
+        </div>
+        <div class="work_wrap">
+            <div class="work_images">
+                <div><a href="./works3.html"><img src="imeges/work3.png" alt="work3"></a></div>
+                <div class="work_desc">
+                    <p>Webサイト</p>
+                    <p>コーディング</p>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="work_wrap">
+            <div class="work_images">
+                <div><a href="./works4.html"><img src="imeges/work4.png" alt="work4"></a></div>
+                <div class="work_desc banner">
+                    <p>バナー</p>
+                    <p>デザイン</p>
+                </div>
+            </div>
+            <div class="work_images">
+                <div><a href="./works5.html"><img src="imeges/work5.png" alt="work5"></a></div>
+                <div class="work_desc banner">
+                    <p>バナー</p>
+                    <p>デザイン</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <section id="contact" class="contact">
+        <div class="contact_img">
+            <a href="../contact/index.html"><img src="../images/contact.png" alt="contact"></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_block">
+            <div class="footer_img"><a href="./index.html">
+                    <img src="../images/footer_logo.png" alt="XYZ design"></a>
+            </div>
+            <nav class="pc_nav footer_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="sp_btn"><span></span></div> -->
+            <nav class="footer_sp_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $(".sp_nav").fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+
+            $('.works_images_sp').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+        });
+    </script>
+
+</body>
+
+</html>

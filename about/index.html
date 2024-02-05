@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masudameiのportfolio</title>
+    <meta name="description" content="masudameiのportfolioです">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrap">
+            <a href="../index.html">
+                <h1 class="header_logo"><img src="../images/logo_header.png" alt="XYZ DESIGN"></h1>
+            </a>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="about_top_img"><img src="imeges/works_top.png" alt="works"></div>
+
+        <h2>About</h2>
+
+        <div class="about">
+
+            <p class="lead">昔から人と関わることが好きで、大学時代は心理学を専攻していました。<br>
+                誰かに共感することと、作ることが得意だったので地元のBarでバーテンダーをしていました。<br>
+                しかし働いていたお店で集客に悩み、<br class="sp_br">その当時更新していたお店のWebサイトに力を入れたいと思ったのが<br>
+                サイト制作をやるきっかけでした。<br>
+                現在は様々なWebサイト制作を行う上で、現場で知識を蓄えてクライアントの力になりたいという気持ちから、<br>Web制作会社に勤務しています。
+
+
+            </p>
+
+
+            <div class="about_design">
+                <h2>わたしのデザインの考え方<div class="about_img sp"><img src="imeges/watasi.png" alt="自画像"></div>
+                </h2>
+                <div class="about_wrapper">
+                    <div class="about_img pc"><img src="imeges/watasi.png" alt="自画像"></div>
+                    <div class="about_text">
+                        <p class="about_desc">美味しいと思うものが人それぞれ違うように、デザインにも様々なものがあります。<br>
+                            でもその物を作りたい時、達成したい目標や目的は明確に存在します。<br>
+                            そんな目的や目標達成をデザインすることを通じて、わたしにお手伝いさせてください。<br>
+                            また作成後のフォローアップも含めて、お客様の立場に立って、その目的に対する結果にひとつでも多くコミットできることが、わたしのやりがいです。
+                        </p>
+                        <p class="about_name">
+                            Mei Masuda
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <section id="contact" class="contact">
+        <div class="contact_img">
+            <a href="../contact/index.html"><img src="../images/contact.png" alt="contact"></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_block">
+            <div class="footer_img"><a href="./index.html">
+                    <img src="../images/footer_logo.png" alt="XYZ DESIGN"></a>
+            </div>
+            <nav class="pc_nav footer_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="sp_btn"><span></span></div> -->
+            <nav class="footer_sp_nav">
+                <ul>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../menu/index.html">Menu</a></li>
+                    <li><a href="../works/index.html">Works</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                // ここにクリックした時の挙動を記述
+                $(".sp_nav").fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+
+            $('.works_images_sp').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
