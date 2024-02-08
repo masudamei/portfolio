@@ -80,6 +80,16 @@ h2 {
 .sp {
   display: none;
 }
+.menu_btn {
+  border: 1px solid #553b2a;
+  width: 250px;
+  height: 68px;
+  text-align: center;
+  line-height: 68px;
+  margin: 90px auto 0;
+  border-radius: 3px;
+}
+
 @media screen and (max-width: 1100px) {
 }
 @media screen and (max-width: 767px) {
@@ -176,5 +186,14 @@ h2 {
   }
   .about_img {
     width: 30%;
+  }
+  .menu_btn {
+    border: 1px solid #553b2a;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 50px auto;
+    border-radius: 3px;
   }
 }
