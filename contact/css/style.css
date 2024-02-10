@@ -109,7 +109,6 @@ textarea {
     line-height: 2.5em;
   }
   input[type="submit"] {
-    appearance: none;
     -webkit-appearance: none;
     border: 1px solid #553b2a;
     text-align: center;
