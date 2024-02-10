@@ -106,4 +106,8 @@ input {
     letter-spacing: 0.1em;
     line-height: 2.5em;
   }
+  input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+  }
 }
