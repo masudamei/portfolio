@@ -16,7 +16,7 @@
 }
 .input {
   display: block;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 button {
   border: 1px solid #553b2a;
@@ -39,15 +39,15 @@ textarea {
   box-sizing: border-box;
 }
 .btn {
-  border: 1px solid #553b2a;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 .contact_desc02 {
   margin-top: 60px;
   line-height: 1.17;
   letter-spacing: 0.1em;
 }
+
 .thanks_desc {
   width: 50%;
   margin: 30px auto 0;
