@@ -116,4 +116,7 @@ textarea {
     background-color: #ffffff;
     cursor: pointer;
   }
+  .btn p {
+    z-index: 999;
+  }
 }
