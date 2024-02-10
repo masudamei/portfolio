@@ -27,7 +27,7 @@
 }
 .loading_text {
   position: absolute;
-  top: 72%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -323,6 +323,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .loading_text {
+    z-index: 999;
+  }
   .scroll_img img {
     width: 20%;
   }
