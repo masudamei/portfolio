@@ -325,6 +325,7 @@
 @media screen and (max-width: 767px) {
   .loading_text {
     font-size: 14px;
+    padding-bottom: 20px;
   }
   .scroll_img img {
     width: 20%;

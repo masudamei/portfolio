@@ -32,12 +32,14 @@ input,
 textarea {
   width: 100%;
 }
-input {
+input,
+textarea {
   padding: 10px 20px;
   margin-top: 14px;
   box-sizing: border-box;
 }
 .btn {
+  border: 1px solid #553b2a;
   display: flex;
   justify-content: flex-end;
 }
@@ -109,5 +111,10 @@ input {
   input[type="submit"] {
     appearance: none;
     -webkit-appearance: none;
+    border: 1px solid #553b2a;
+    text-align: center;
+
+    background-color: #ffffff;
+    cursor: pointer;
   }
 }
