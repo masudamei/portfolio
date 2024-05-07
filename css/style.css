@@ -148,7 +148,7 @@
 
 .about_desc {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.9;
   padding-top: 30px;
 }
 .sp-only {
@@ -172,7 +172,7 @@
 
 .about h3 {
   margin: 0 0 30px 50px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .pc-only {
   display: block;
@@ -411,6 +411,7 @@
   .about h3 {
     margin: 15px 0;
     font-size: 18px;
+    text-align: center;
   }
 
   .about_img {
@@ -443,7 +444,7 @@
   }
 
   .about_desc {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.75;
     text-align: justify;
   }
@@ -493,7 +494,7 @@
 
   .menu_item p {
     line-height: 1.58;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 0;
     height: auto;
     padding: 10px;

@@ -42,16 +42,15 @@ h2 {
 }
 .work_desc {
   display: flex;
-  margin-left: 10px;
 }
 .work_desc p:first-child {
   font-size: 16px;
-  padding: 12px 25px 12px 10px;
+  padding: 10px 25px 10px 0px;
   border-right: 2px solid #553b2a;
 }
 .work_desc p:last-child {
   font-size: 14px;
-  padding: 12px 30px 12px 15px;
+  padding: 10px 30px 10px 10px;
 }
 .banner {
   margin-top: 12px;
@@ -66,6 +65,10 @@ h2 {
 .work_desc03 {
   font-weight: normal;
   margin-bottom: 20px;
+  font-size: 16px;
+}
+.work_desc03{
+  line-height: 1.9;
 }
 .work_about {
   margin-top: 100px;
@@ -88,6 +91,9 @@ h2 {
   line-height: 68px;
   margin: 90px auto 0;
   border-radius: 3px;
+}
+.work_desc04{
+  line-height: 1.9;
 }
 
 @media screen and (max-width: 1100px) {
@@ -125,25 +131,25 @@ h2 {
     width: 90%;
   }
   .work_desc {
-    font-size: 2.9vw;
+    font-size: 14px;
     letter-spacing: 0.1em;
-    line-height: 2.5em;
+    line-height: 1.9;
   }
 
   .work_desc02,
   .work_about p {
     margin: 5px auto;
-    font-size: 2.9vw;
+    font-size: 14px;
     letter-spacing: 0.1em;
-    line-height: 2.5em;
+    line-height: 1.9;
   }
   .work_about {
     margin: 25px auto 0;
   }
   .work_desc03 {
-    font-size: 3.5vw;
+    font-size: 16px;
     letter-spacing: 0.1em;
-    line-height: 2.5em;
+    line-height: 1.9;
     margin-bottom: 0;
   }
   .work_img {
@@ -154,9 +160,9 @@ h2 {
   .lead,
   .about_design {
     width: 90%;
-    font-size: 2.9vw;
+    font-size: 14px;
     letter-spacing: 0.1em;
-    line-height: 2.5em;
+    line-height: 1.9;
     margin: 30px auto 40px;
   }
   .about h2 {
@@ -170,9 +176,9 @@ h2 {
     display: block;
   }
   .about_desc {
-    font-size: 2.9vw;
+    font-size: 14px;
     letter-spacing: 0.1em;
-    line-height: 2.5em;
+    line-height: 1.9;
   }
   .about_text {
     width: 100%;
@@ -195,5 +201,14 @@ h2 {
     line-height: 40px;
     margin: 50px auto;
     border-radius: 3px;
+  }
+  .work_desc p:first-child {
+    font-size: 16px;
+    padding: 7px 25px 7px 0px;
+    border-right: 1px solid #553b2a;
+  }
+  .work_desc p:last-child {
+    font-size: 14px;
+    padding: 7px 30px 7px 10px;
   }
 }
